@@ -15,7 +15,7 @@ See Code and Data Availability Statement:
 
 At the moment of publication, we are sharing the downstream individual statistical data files that directly support the current study. These can be found in the data/individual_masked_stats_files folder. 
 
-We have provided the scripts that these statistical files were derived from -- including the regression script (found at Scripts/01.0_AmplitudeModulated_Regression_WordFreq_PhonoNeighDen.sh) and the associated timing file (data/timing_file.txt). We have also included the scripts that compute the group stats for each lexical property.
+We have provided the scripts that these statistical files were derived from -- including the regression script (found at Scripts/01.0_AmplitudeModulated_Regression_WordFreq_PhonoNeighDen.sh) and the associated timing file (data/amp_logzscore_LexFreq_PhD.txt). We have also included the scripts that compute the group stats for each lexical property.
 
 We have also shared the invididual-level cerebellar cluster data files associated with sensitivity to phonological neighborhood density (data/functional_clusters/phonological_neighborhood_density) and lexical frequency (data/functional_clusters/lexical_frequency). The scripts that compare and compute the degree of cluster overlap are included in the Scripts folder.
 
