@@ -1,0 +1,142 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 8856
+'[sag21031@H2WH20JTQ6NY: Wed Jul  6 18:29:14 2022] ===================================\n[sag21031@H2WH20JTQ6NY: Wed Jul  6 18:29:14 2022] === History of inputs to 3dcalc ===\n[sag21031@H2WH20JTQ6NY: Wed Jul  6 18:29:14 2022] === Input a:\n[sag21031@H2WH20JTQ6NY: Wed Jul  6 18:29:14 2022] [ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:01:40 2020] ===================================\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:01:40 2020] === History of inputs to 3dcalc ===\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:01:40 2020] === Input a:\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:01:40 2020] [ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:52 2020] ===================================\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:52 2020] === History of inputs to 3dcalc ===\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:52 2020] === Input a:\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:52 2020] [ebm09004@CLAS-Mac-2.local: Mon Jan  6 23:51:36 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dTcat -prefix S9892SSG1.preproc/pb00.S9892SSG1.r01.tcat 'briks/S9892SSG1_POD_DO+orig[0..$]'\n[ebm09004@CLAS-Mac-2.local: Mon Jan  6 23:59:26 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dAllineate -base S9892SSG1_MP_ns+tlrc -input pb00.S9892SSG1.r01.tcat+orig -1Dmatrix_apply mat.r01.warp.aff12.1D -mast_dxyz 2 -prefix rm.epi.nomask.r01\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:52 2020] === Input b:\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:52 2020] [ebm09004@CLAS-Mac-2.local: Mon Jan  6 23:51:36 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dTcat -prefix S9892SSG1.preproc/pb00.S9892SSG1.r01.tcat 'briks/S9892SSG1_POD_DO+orig[0..$]'\n[ebm09004@CLAS-Mac-2.local: Mon Jan  6 23:58:58 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dcalc -a pb00.S9892SSG1.r01.tcat+orig -expr 1 -prefix rm.epi.all1\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:12 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dAllineate -base S9892SSG1_MP_ns+tlrc -input rm.epi.all1+orig -1Dmatrix_apply mat.r01.warp.aff12.1D -mast_dxyz 2 -final NN -quiet -prefix rm.epi.1.r01\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:51 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dTstat -min -prefix rm.epi.min.r01 rm.epi.1.r01+tlrc\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:51 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dcopy rm.epi.min.r01+tlrc mask_epi_extents\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:52 2020] ===================================\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:52 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dcalc -a rm.epi.nomask.r01+tlrc -b mask_epi_extents+tlrc -expr 'a*b' -prefix pb01.S9892SSG1.r01.volreg\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:01:21 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dmerge -1blur_fwhm 4 -doall -prefix pb02.S9892SSG1.r01.blur pb01.S9892SSG1.r01.volreg+tlrc\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:01:40 2020] === Input b:\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:01:40 2020] [ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:52 2020] ===================================\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:52 2020] === History of inputs to 3dcalc ===\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:52 2020] === Input a:\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:52 2020] [ebm09004@CLAS-Mac-2.local: Mon Jan  6 23:51:36 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dTcat -prefix S9892SSG1.preproc/pb00.S9892SSG1.r01.tcat 'briks/S9892SSG1_POD_DO+orig[0..$]'\n[ebm09004@CLAS-Mac-2.local: Mon Jan  6 23:59:26 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dAllineate -base S9892SSG1_MP_ns+tlrc -input pb00.S9892SSG1.r01.tcat+orig -1Dmatrix_apply mat.r01.warp.aff12.1D -mast_dxyz 2 -prefix rm.epi.nomask.r01\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:52 2020] === Input b:\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:52 2020] [ebm09004@CLAS-Mac-2.local: Mon Jan  6 23:51:36 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dTcat -prefix S9892SSG1.preproc/pb00.S9892SSG1.r01.tcat 'briks/S9892SSG1_POD_DO+orig[0..$]'\n[ebm09004@CLAS-Mac-2.local: Mon Jan  6 23:58:58 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dcalc -a pb00.S9892SSG1.r01.tcat+orig -expr 1 -prefix rm.epi.all1\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:12 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dAllineate -base S9892SSG1_MP_ns+tlrc -input rm.epi.all1+orig -1Dmatrix_apply mat.r01.warp.aff12.1D -mast_dxyz 2 -final NN -quiet -prefix rm.epi.1.r01\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:51 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dTstat -min -prefix rm.epi.min.r01 rm.epi.1.r01+tlrc\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:51 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dcopy rm.epi.min.r01+tlrc mask_epi_extents\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:52 2020] ===================================\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:52 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dcalc -a rm.epi.nomask.r01+tlrc -b mask_epi_extents+tlrc -expr 'a*b' -prefix pb01.S9892SSG1.r01.volreg\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:01:21 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dmerge -1blur_fwhm 4 -doall -prefix pb02.S9892SSG1.r01.blur pb01.S9892SSG1.r01.volreg+tlrc\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:01:40 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dTstat -prefix rm.mean_r01 pb02.S9892SSG1.r01.blur+tlrc\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:01:40 2020] === Input c:\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:01:40 2020] [ebm09004@CLAS-Mac-2.local: Mon Jan  6 23:51:36 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dTcat -prefix S9892SSG1.preproc/pb00.S9892SSG1.r01.tcat 'briks/S9892SSG1_POD_DO+orig[0..$]'\n[ebm09004@CLAS-Mac-2.local: Mon Jan  6 23:58:58 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dcalc -a pb00.S9892SSG1.r01.tcat+orig -expr 1 -prefix rm.epi.all1\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:12 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dAllineate -base S9892SSG1_MP_ns+tlrc -input rm.epi.all1+orig -1Dmatrix_apply mat.r01.warp.aff12.1D -mast_dxyz 2 -final NN -quiet -prefix rm.epi.1.r01\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:51 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dTstat -min -prefix rm.epi.min.r01 rm.epi.1.r01+tlrc\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:00:51 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dcopy rm.epi.min.r01+tlrc mask_epi_extents\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:01:40 2020] ===================================\n[ebm09004@CLAS-Mac-2.local: Tue Jan  7 00:01:40 2020] {AFNI_17.3.02:macosx_10.7_Intel_64} 3dcalc -a pb02.S9892SSG1.r01.blur+tlrc -b rm.mean_r01+tlrc -c mask_epi_extents+tlrc -expr 'c * min(200, a/b*100)*step(a)*step(b)' -prefix pb03.S9892SSG1.r01.scale\n[labuser@d66h164.public.uconn.edu: Mon Feb 28 12:41:06 2022] {AFNI_18.2.14:macos_10.12_local} 3dDeconvolve -input pb03.S9892SSG1.r01.scale+tlrc.HEAD -polort 3 -GOFORIT 3 -num_stimts 7 -stim_times_AM2 1 /Volumes/Research/MyersLab/SPLATScast/Data/Timing/amp_logzscore_WF_PhD.txt GAM -stim_label 1 amp_logscore_wf_phd -stim_file 2 'dfile_rall.1D[0]' -stim_base 2 -stim_label 2 roll -stim_file 3 'dfile_rall.1D[1]' -stim_base 3 -stim_label 3 pitch -stim_file 4 'dfile_rall.1D[2]' -stim_base 4 -stim_label 4 yaw -stim_file 5 'dfile_rall.1D[3]' -stim_base 5 -stim_label 5 dS -stim_file 6 'dfile_rall.1D[4]' -stim_base 6 -stim_label 6 dL -stim_file 7 'dfile_rall.1D[5]' -stim_base 7 -stim_label 7 dP -fout -tout -rout -fitts fitts.allsubs_logzscore_WordFreq_PhonoDen_AmpMod.S9892SSG1 -errts errts.allsubs_logzscore_WordFreq_PhonoDen_AmpMod.S9892SSG1 -bucket stats.allsubs_logzscore_WordFreq_PhonoDen_AmpMod.S9892SSG1\n[labuser@d66h164.public.uconn.edu: Mon Feb 28 12:41:06 2022] Output prefix: stats.allsubs_logzscore_WordFreq_PhonoDen_AmpMod.S9892SSG1\n[sag21031@H2WH20JTQ6NY: Wed Jul  6 13:46:58 2022] {AFNI_22.0.15:macos_10.12_local} 3dWarp -tta2mni -prefix MNI_stats.allsubs_logzscore_WordFreq_PhonoDen_AmpMod.S9892SSG1 stats.allsubs_logzscore_WordFreq_PhonoDen_AmpMod.S9892SSG1+tlrc\n[sag21031@H2WH20JTQ6NY: Wed Jul  6 18:29:14 2022] === Input b:\n[sag21031@H2WH20JTQ6NY: Wed Jul  6 18:29:14 2022] [dglen@gollum.nimh.nih.gov: Wed Jul 31 17:41:40 2013] 3dcopy Cerebellum-MNIsegment.nii.gz ../AFNI_Cerebellum/Cerebellum-MNIsegment.nii.gz\n[sag21031@H2WH20JTQ6NY: Wed Jul  6 17:32:50 2022] {AFNI_22.0.15:macos_10.12_local} 3dcalc -a Cerebellum-MNIsegment.nii -expr a/a -prefix OneCerebellum-MNIsegment.nii\n[sag21031@H2WH20JTQ6NY: Wed Jul  6 18:29:14 2022] {AFNI_22.0.15:macos_10.12_local} 3dfractionize -template MNI_stats.allsubs_logzscore_WordFreq_PhonoDen_AmpMod.S9892SSG1+tlrc. -input OneCerebellum-MNIsegment.nii -clip 0.2 -vote -prefix S9892SSG1Cer\n[sag21031@H2WH20JTQ6NY: Wed Jul  6 18:29:14 2022] ===================================\n[sag21031@H2WH20JTQ6NY: Wed Jul  6 18:29:14 2022] {AFNI_22.0.15:macos_10.12_local} 3dcalc -fscale -a MNI_stats.allsubs_logzscore_WordFreq_PhonoDen_AmpMod.S9892SSG1+tlrc. -b S9892SSG1Cer+tlrc.HEAD -expr 'a*b' -prefix Masked_S9892SSG1_WTT1_functional~
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_FUNC~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'AFN_hYgZmSW6VOglbtQb79Zimw~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Wed Jul  6 18:29:14 2022~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 2 11 1 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 5
+'zyxt~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 0 3 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+            -79            -79            -64
+
+type  = float-attribute
+name  = DELTA
+count = 3
+              2              2              2
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+              2              0              0            -79              0
+              2              0            -79              0              0
+              2            -64
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+              2              0              0            -79              0
+              2              0            -79              0              0
+              2            -64
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 20
+              0      0.1317173              0        29.7154     -0.5910689
+      0.2225991      -3.991791       4.051011     -0.5540529      0.4337977
+       -4.34148       7.826605     -0.4133037      0.9634096      -4.836841
+        4.43975              0      0.1317173              0        29.7154
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 10 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 80 95 75 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 10
+ 3 3 3 3 3
+ 3 3 3 3 3
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 10
+              0              0              0              0              0
+              0              0              0              0              0
+
+type = string-attribute
+name = BRICK_LABS
+count = 235
+'Full_R^2~Full_Fstat~amp_logscore_wf_phd#0_Coef~amp_logscore_wf_phd#0_Tstat~amp_logscore_wf_phd#1_Coef~amp_logscore_wf_phd#1_Tstat~amp_logscore_wf_phd#2_Coef~amp_logscore_wf_phd#2_Tstat~amp_logscore_wf_phd_R^2~amp_logscore_wf_phd_Fstat~
+
+type = string-attribute
+name = BRICK_KEYWORDS
+count = 10
+'~~~~~~~~~~
+
+type  = float-attribute
+name  = BRICK_STATAUX
+count = 32
+              0              7              2            1.5          293.5
+              1              4              2              3            587
+              3              3              1            587              5
+              3              1            587              7              3
+              1            587              8              7              2
+            1.5          293.5              9              4              2
+              3            587
+
+type = string-attribute
+name = BRICK_STATSYM
+count = 106
+'Beta(1.5,293.5);Ftest(3,587);none;Ttest(587);none;Ttest(587);none;Ttest(587);Beta(1.5,293.5);Ftest(3,587)~
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 4
+'MNI~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~
