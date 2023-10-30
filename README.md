@@ -1,5 +1,5 @@
 # cerebellum-podcast-fmri
-Statistical fMRI data and processing scripts for the publication titled, "The cerebellum is sensitive to the lexical properties of words during spoken language comprehension" provisionally accepted on Oct. 26th 2023. See link to preprint copy: 10.31234/osf.io/t9fyc.
+Statistical fMRI data and processing scripts for the publication titled, "The cerebellum is sensitive to the lexical properties of words during spoken language comprehension" accepted on Oct. 30th 2023. See link to preprint copy: 10.31234/osf.io/t9fyc.
 
 A note -- these analyses were conducted in AFNI. As such, all the scripts are UNIX shell scripts that use AFNI functions, and the data files are AFNI formatted (BRIK and HEAD files). For use with other software, these files will need to be converted to NIFTI (.nii).
 
